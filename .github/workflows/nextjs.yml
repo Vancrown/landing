@@ -63,6 +63,8 @@ jobs:
         run: |
           corepack enable
           corepack prepare pnpm@latest --activate
+          npm install -g pnpm
+          pnpm --version
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
