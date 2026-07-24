@@ -30,6 +30,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+      NEXT_PUBLIC_CONTACT_EMAIL: ${{ vars.NEXT_PUBLIC_CONTACT_EMAIL }}
+      NEXT_PUBLIC_GITHUB_URL: ${{ vars.NEXT_PUBLIC_GITHUB_URL }}
+      NEXT_PUBLIC_TWITTER_URL: ${{ vars.NEXT_PUBLIC_TWITTER_URL }}
     steps:
       - name: Checkout
         uses: actions/checkout@v5
