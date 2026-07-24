@@ -1,0 +1,108 @@
+---
+title: "ThoughtStream: Stream Thoughts Like a Pro"
+publishedAt: "2026-06-01"
+summary: "A small Python-built Mac app for turning messy voice input into structured writing, prompts, and notes."
+---
+
+This is my first Mac app.
+
+I call it ThoughtStream: stream thoughts like a pro.
+
+The idea behind ThoughtStream is simple:
+
+Turn messy spoken thoughts into clean, structured, ready-to-use text.
+
+In many cases, our thoughts do not come out as complete sentences. We pause. We repeat ourselves. We switch languages. We add context halfway through. We say whatever comes to mind first, and only later realize how those pieces should be organized.
+
+ThoughtStream is built for exactly that kind of real-world expression.
+
+Instead of forcing you to type perfectly or speak like you are reading from a script, ThoughtStream lets you speak naturally. It then turns your voice into polished text that is easier to read, reuse, and share.
+
+## Four Modes for Different Workflows
+
+The current version of ThoughtStream supports four modes: Chat, Raw, Writing, and Note.
+
+Each mode is designed for a different kind of workflow.
+
+### Chat Mode
+
+Chat Mode is designed for talking to AI agents.
+
+For example, when I am working with a vibe coding agent and want to describe a feature, a bug, or a new product idea, I can simply speak out my thoughts. ThoughtStream then turns that voice input into a clear, structured prompt that is easier for the agent to understand.
+
+This is especially useful when the original thought is messy, incomplete, or scattered across multiple ideas.
+
+### Raw Mode
+
+Raw Mode only performs speech-to-text transcription.
+
+It does not rewrite, summarize, or reorganize the content. This mode is useful when you only want the original transcription and do not need any additional processing.
+
+### Writing Mode
+
+Writing Mode is designed for longer-form expression.
+
+It works well for essays, product introductions, emails, technical notes, social posts, or any situation where you want your thoughts to become more fluent and readable.
+
+You can speak out a rough version of what you want to say, and ThoughtStream will help turn it into natural written language.
+
+### Note Mode
+
+Note Mode is designed for meetings, discussions, study sessions, and workshops.
+
+You can turn on Note Mode during a meeting. After the meeting ends, ThoughtStream can generate a clean note with clear formatting, highlighted key points, and a more organized structure.
+
+## How It Works
+
+Using ThoughtStream is simple.
+
+After launching the app, ThoughtStream runs quietly in the background. You will see its icon in the Mac menu bar, where you can turn the transcription listener on or off. It does not interrupt your normal workflow or affect your other daily operations.
+
+When you want ThoughtStream to start listening, you press one of the mode-specific hotkeys:
+
+- Chat Mode: Control + Option + Command + 1
+- Raw Mode: Control + Option + Command + 2
+- Writing Mode: Control + Option + Command + 3
+- Note Mode: Control + Option + Command + 4
+
+After pressing the hotkey, you can speak freely. When you finish, press the same hotkey again.
+
+ThoughtStream will automatically handle speech recognition, content processing, and text insertion. The final output is pasted directly into your current text editor or input box.
+
+The workflow is intentionally lightweight:
+
+Press hotkey → speak → press hotkey again → generate and paste → done.
+
+## Built for Real Expression
+
+ThoughtStream is not designed only for clean, scripted speech.
+
+It is designed for real thinking.
+
+Real speech often includes pauses, repetitions, filler words, corrections, and half-formed ideas. Sometimes we stop in the middle of a sentence and restart. Sometimes we explain something out of order. Sometimes we switch between languages because a specific term feels more natural in one language than another.
+
+ThoughtStream is built to handle this kind of input.
+
+It supports many languages and can work with mixed-language speech. For example, I often speak in a mix of Chinese and English, especially when discussing technical terms. Depending on the setting, ThoughtStream can either normalize the final output into one language or preserve the mixed-language style.
+
+This makes it useful not just as a dictation tool, but as a thought-processing tool.
+
+## Technical Implementation
+
+ThoughtStream is currently built entirely in Python.
+
+The speech recognition and LLM-based rewriting are powered by OpenAI models. The Mac menu bar interface is implemented with the rumps package.
+
+The app uses cloud-based APIs instead of running large models locally, which keeps local CPU and GPU usage low. Based on current model pricing and my expected personal usage, the estimated monthly cost should stay under $10.
+
+For me, that makes ThoughtStream a high-ROI personal productivity tool: low cost, lightweight implementation, and meaningful daily workflow improvement.
+
+## What Comes Next
+
+The next step is to keep refining the product.
+
+In the short term, I plan to improve the Mac experience with a better interface, clearer status indicators, faster transcription response, and more polished interaction details.
+
+In the long term, I want ThoughtStream to become cross-platform, with support for Windows, iOS, and Android.
+
+The goal is for ThoughtStream to grow beyond a Mac menu bar utility and become a lightweight, cross-platform thought-dumping and writing assistant: a tool that helps people capture, organize, and reuse their ideas wherever they work.

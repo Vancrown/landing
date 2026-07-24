@@ -13,7 +13,7 @@ export default function ContactForm() {
           href={`mailto:${contactEmail}`}
           className="text-blue-500 hover:underline text-lg"
         >
-          {contactEmail}
+          {`dm eii`}
         </a>
       </div>
 
@@ -38,17 +38,7 @@ export default function ContactForm() {
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
             >
-              Twitter / X
-            </a>
-          </li>
-          <li>
-            <a
-              href={linkedinUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
-            >
-              LinkedIn
+              X / Twitter
             </a>
           </li>
         </ul>

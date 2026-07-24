@@ -1,0 +1,31 @@
+---
+title: "Detect English Accents"
+publishedAt: "2026-06-01"
+summary: "I built a web app that detects English accents. Users can either upload an audio file or record a short clip directly in the browser, and the model will try to predict the speaker’s English accent."
+---
+
+The original motivation behind this project was very simple. As an international student, I have many friends from different parts of the world. When we communicate in English, each of us carries our own pronunciation habits, shaped by our first language, where we grew up, and the cultures we come from.
+
+Guessing accents can be a fun icebreaker. It helps us notice the deeper cultural background behind language, and it often makes conversations more relaxed and playful.
+
+The app supports two input methods: live recording and audio file upload.
+
+For live recording, users open the web page, click the “Start Recording” button, and read a short paragraph out loud. Of course, they do not have to read the exact paragraph. They can say anything they want. After finishing the recording, they click the “Stop Recording” button. The app then shows an audio preview, along with the model’s predicted accent region and the corresponding probability.
+
+Uploading an audio file is even easier. Users can drag and drop an audio file, preview it, and then click the “Analyze” button. The model will process the file and display the prediction results.
+
+The whole project is made up of two main parts: the frontend and the backend.
+
+The frontend is a React app built with Next.js and styled with Tailwind CSS. It is intentionally lightweight. Right now, it only has a single landing page, without any complicated routing. The main focus is on live recording, file uploading, audio preview, and result display.
+
+The backend is built with FastAPI. The accent recognition model comes from SpeechBrain’s Common Accent model. Uploaded or recorded audio files are first converted into WAV format with ffmpeg, and then passed into the model to generate prediction results.
+
+There are also some limitations to this project.
+
+First, the local SpeechBrain model is not very large, so the audio features it can extract are limited. Second, the model only supports 16 accent regions, which means many recognizable accents are not included, such as Chinese accents or French accents. Because of this, in real testing, several predicted accent categories may sometimes have very similar probabilities.
+
+But these limitations do not stop it from being a fun demo app.
+
+It may not always predict exactly where someone is from, but it creates a natural opening for people to talk about their language background, personal history, and cultural differences.
+
+For me, the most interesting part is that this is not only an accent detection tool. It is also a small bridge between people.
